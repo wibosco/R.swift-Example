@@ -15,6 +15,8 @@
 		3D0D7D8F267CB6EF00BA264D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D7D86267CB6EF00BA264D /* ViewController.swift */; };
 		3D0D7D91267CB6EF00BA264D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D7D8A267CB6EF00BA264D /* AppDelegate.swift */; };
 		3D0D7D92267CB6EF00BA264D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D7D8B267CB6EF00BA264D /* SceneDelegate.swift */; };
+		3D56037A267FDF400042A462 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D560379267FDF400042A462 /* R.generated.swift */; };
+		3D560385267FE0180042A462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D560387267FE0180042A462 /* Localizable.strings */; };
 		B5E9EAFC9519C5C56550377A /* Pods_R_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03117EBB122678CF534E3053 /* Pods_R_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		3D0D7D88267CB6EF00BA264D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0D7D8A267CB6EF00BA264D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D0D7D8B267CB6EF00BA264D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D560379267FDF400042A462 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		3D560386267FE0180042A462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		72A466F8820ED555860F4A46 /* Pods-R-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.release.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.release.xcconfig"; sourceTree = "<group>"; };
 		905AEAF64D4381177E8866F9 /* Pods-R-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.debug.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +140,9 @@
 		3D0D7D7E267CB6EF00BA264D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D560379267FDF400042A462 /* R.generated.swift */,
 				3D0D7D7F267CB6EF00BA264D /* Assets.xcassets */,
+				3D560387267FE0180042A462 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -181,7 +187,6 @@
 				905AEAF64D4381177E8866F9 /* Pods-R-Example.debug.xcconfig */,
 				72A466F8820ED555860F4A46 /* Pods-R-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,6 +206,7 @@
 			buildConfigurationList = 3D0D7D6C267CB65200BA264D /* Build configuration list for PBXNativeTarget "R-Example" */;
 			buildPhases = (
 				92AD85CD42E105CAB3DC4365 /* [CP] Check Pods Manifest.lock */,
+				3D56036F267FDDE90042A462 /* Generate R.swift */,
 				3D0D7D3E267CB65000BA264D /* Sources */,
 				3D0D7D3F267CB65000BA264D /* Frameworks */,
 				3D0D7D40267CB65000BA264D /* Resources */,
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0D7D8E267CB6EF00BA264D /* Main.storyboard in Resources */,
+				3D560385267FE0180042A462 /* Localizable.strings in Resources */,
 				3D0D7D8C267CB6EF00BA264D /* Assets.xcassets in Resources */,
 				3D0D7D8D267CB6EF00BA264D /* LaunchScreen.storyboard in Resources */,
 			);
@@ -321,6 +328,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3D56036F267FDDE90042A462 /* Generate R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Generate R.swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		8D9B9B08E4AEB985F8B14B21 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +397,7 @@
 				3D0D7D91267CB6EF00BA264D /* AppDelegate.swift in Sources */,
 				3D0D7D8F267CB6EF00BA264D /* ViewController.swift in Sources */,
 				3D0D7D92267CB6EF00BA264D /* SceneDelegate.swift in Sources */,
+				3D56037A267FDF400042A462 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +447,14 @@
 				3D0D7D84267CB6EF00BA264D /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D560387267FE0180042A462 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D560386267FE0180042A462 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
