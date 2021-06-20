@@ -19,7 +19,13 @@ platform :ios do
   lane :run_unit_tests do
     scan(
       workspace: "R-Example.xcworkspace",
-      skip_build: true
+      scheme: "R-Example",
+      build_for_testing: true
+    )
+    scan(
+      workspace: "R-Example.xcworkspace",
+      scheme: "Stack",
+      build_for_testing: true
     )
   end
 end

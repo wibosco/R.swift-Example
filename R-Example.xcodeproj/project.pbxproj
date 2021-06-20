@@ -17,7 +17,9 @@
 		3D56037A267FDF400042A462 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D560379267FDF400042A462 /* R.generated.swift */; };
 		3D560385267FE0180042A462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D560387267FE0180042A462 /* Localizable.strings */; };
 		3D560399267FE5840042A462 /* AppTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D560398267FE5840042A462 /* AppTabBarControllerViewController.swift */; };
-		B5E9EAFC9519C5C56550377A /* Pods_R_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03117EBB122678CF534E3053 /* Pods_R_Example.framework */; };
+		3D9FD6A82680963A006AD09A /* Stack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FD6A72680963A006AD09A /* Stack.framework */; };
+		3D9FD6A92680963A006AD09A /* Stack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FD6A72680963A006AD09A /* Stack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68FBBEB50AAA60CB93A93D88 /* Pods_R_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3D9FD6A92680963A006AD09A /* Stack.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03117EBB122678CF534E3053 /* Pods_R_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_R_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F2D3CE755CD9AA4C235C1F /* Pods-R-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.debug.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D0D7D42267CB65000BA264D /* R-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0D7D58267CB65200BA264D /* R-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0D7D5C267CB65200BA264D /* R_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_ExampleTests.swift; sourceTree = "<group>"; };
@@ -68,8 +71,9 @@
 		3D560379267FDF400042A462 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3D560386267FE0180042A462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3D560398267FE5840042A462 /* AppTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarControllerViewController.swift; sourceTree = "<group>"; };
-		72A466F8820ED555860F4A46 /* Pods-R-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.release.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.release.xcconfig"; sourceTree = "<group>"; };
-		905AEAF64D4381177E8866F9 /* Pods-R-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.debug.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9FD6A72680963A006AD09A /* Stack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_R_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5EA51E5F50ED6FA2EB2D15 /* Pods-R-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.release.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5E9EAFC9519C5C56550377A /* Pods_R_Example.framework in Frameworks */,
+				68FBBEB50AAA60CB93A93D88 /* Pods_R_Example.framework in Frameworks */,
+				3D9FD6A82680963A006AD09A /* Stack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063B19AD3BC3DF23F4BD1E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FD6A72680963A006AD09A /* Stack.framework */,
+				A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D0D7D39267CB65000BA264D = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +120,7 @@
 				3D0D7D66267CB65200BA264D /* R-ExampleUITests */,
 				3D0D7D43267CB65000BA264D /* Products */,
 				6C4F2FF4919EFB3773300A45 /* Pods */,
-				E395BE615227ECDB96BF0FEF /* Frameworks */,
+				063B19AD3BC3DF23F4BD1E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,18 +211,10 @@
 		6C4F2FF4919EFB3773300A45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				905AEAF64D4381177E8866F9 /* Pods-R-Example.debug.xcconfig */,
-				72A466F8820ED555860F4A46 /* Pods-R-Example.release.xcconfig */,
+				33F2D3CE755CD9AA4C235C1F /* Pods-R-Example.debug.xcconfig */,
+				DB5EA51E5F50ED6FA2EB2D15 /* Pods-R-Example.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E395BE615227ECDB96BF0FEF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				03117EBB122678CF534E3053 /* Pods_R_Example.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,13 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D0D7D6C267CB65200BA264D /* Build configuration list for PBXNativeTarget "R-Example" */;
 			buildPhases = (
-				92AD85CD42E105CAB3DC4365 /* [CP] Check Pods Manifest.lock */,
-				3D56036F267FDDE90042A462 /* Generate R.swift */,
+				CA866DD383DE47D9F78D76B6 /* [CP] Check Pods Manifest.lock */,
+				3D56036F267FDDE90042A462 /* Generate R.swift files */,
 				3D0D7D3E267CB65000BA264D /* Sources */,
 				3D0D7D3F267CB65000BA264D /* Frameworks */,
 				3D0D7D40267CB65000BA264D /* Resources */,
-				8D9B9B08E4AEB985F8B14B21 /* [CP] Embed Pods Frameworks */,
 				3D5603EB267FE7BD0042A462 /* Embed Frameworks */,
+				A0A0C5721DA08A05A57F5823 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,7 +348,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D56036F267FDDE90042A462 /* Generate R.swift */ = {
+		3D56036F267FDDE90042A462 /* Generate R.swift files */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,7 +358,7 @@
 			inputPaths = (
 				"$TEMP_DIR/rswift-lastrun",
 			);
-			name = "Generate R.swift";
+			name = "Generate R.swift files";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -362,7 +368,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		8D9B9B08E4AEB985F8B14B21 /* [CP] Embed Pods Frameworks */ = {
+		A0A0C5721DA08A05A57F5823 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,7 +385,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-R-Example/Pods-R-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92AD85CD42E105CAB3DC4365 /* [CP] Check Pods Manifest.lock */ = {
+		CA866DD383DE47D9F78D76B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -525,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -580,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -592,7 +598,7 @@
 		};
 		3D0D7D6D267CB65200BA264D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 905AEAF64D4381177E8866F9 /* Pods-R-Example.debug.xcconfig */;
+			baseConfigurationReference = 33F2D3CE755CD9AA4C235C1F /* Pods-R-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -612,7 +618,7 @@
 		};
 		3D0D7D6E267CB65200BA264D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72A466F8820ED555860F4A46 /* Pods-R-Example.release.xcconfig */;
+			baseConfigurationReference = DB5EA51E5F50ED6FA2EB2D15 /* Pods-R-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -637,7 +643,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "R-ExampleTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,7 +663,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "R-ExampleTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
