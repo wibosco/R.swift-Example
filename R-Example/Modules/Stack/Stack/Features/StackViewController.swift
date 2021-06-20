@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
-//  R-Example
+//  StackViewController.swift
+//  Stack
 //
 //  Created by William Boles on 18/06/2021.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class StackViewController: UIViewController {
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelTitle.text = R.string.localizable.mainTitle()
-        labelDescription.text = R.string.localizable.mainDescription()
+        labelTitle.text = R.string.localizable.stackTitle()
+        labelDescription.text = R.string.localizable.stackDescription()
         
         imageViewA.image = R.image.animalVaccine()
         imageViewB.image = R.image.bacteria()

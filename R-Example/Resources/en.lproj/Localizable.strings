@@ -6,6 +6,4 @@
   
 */
 
-"Main.title" = "Icons";
-"Main.description" = "Below is a selection of medical icons:";
-
+"Stack.tabbar.item.title" = "Stack";
