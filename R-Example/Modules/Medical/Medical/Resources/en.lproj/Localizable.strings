@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Stack
+
+  Created by William Boles on 20/06/2021.
+  
+*/
+
+"Medical.title" = "Medical";
+"Medical.description" = "Below is a selection of medical icons:";

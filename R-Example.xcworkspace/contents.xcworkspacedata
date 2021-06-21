@@ -2,12 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:R-Example/Modules/Medical/Medical.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:R-Example/Modules/Education/Education.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:R-Example.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:R-Example/Modules/Stack/Stack.xcodeproj">
    </FileRef>
 </Workspace>

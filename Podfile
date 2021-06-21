@@ -11,8 +11,14 @@ target "R-Example" do
   project 'R-Example.xcodeproj'
 end
 
-target "Stack" do
-  project 'R-Example/Modules/Stack/Stack.xcodeproj'
+target "Medical" do
+  project 'R-Example/Modules/Medical/Medical.xcodeproj'
   
-  target :StackTests
+  target :MedicalTests
+end
+
+target "Education" do
+  project 'R-Example/Modules/Education/Education.xcodeproj'
+  
+  target :EducationTests
 end

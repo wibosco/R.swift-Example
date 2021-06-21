@@ -17,8 +17,14 @@
 		3D56037A267FDF400042A462 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D560379267FDF400042A462 /* R.generated.swift */; };
 		3D560385267FE0180042A462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D560387267FE0180042A462 /* Localizable.strings */; };
 		3D560399267FE5840042A462 /* AppTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D560398267FE5840042A462 /* AppTabBarControllerViewController.swift */; };
-		3D9FD6A82680963A006AD09A /* Stack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FD6A72680963A006AD09A /* Stack.framework */; };
-		3D9FD6A92680963A006AD09A /* Stack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FD6A72680963A006AD09A /* Stack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D8D4C2C268138E0004F93BE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D4C2B268138E0004F93BE /* Coordinator.swift */; };
+		3D8D4C31268138E9004F93BE /* CircusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D4C30268138E9004F93BE /* CircusViewController.swift */; };
+		3D8D4C4926813CF4004F93BE /* Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8D4C4826813CF4004F93BE /* Education.framework */; };
+		3D8D4C4A26813CF4004F93BE /* Education.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8D4C4826813CF4004F93BE /* Education.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D8D4CC2268140EC004F93BE /* Medical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8D4CC1268140EC004F93BE /* Medical.framework */; };
+		3D8D4CC3268140EC004F93BE /* Medical.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8D4CC1268140EC004F93BE /* Medical.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D8D4CCB2681463C004F93BE /* CircusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D4CCA2681463C004F93BE /* CircusTableViewCell.swift */; };
+		3D8D4CCF2681464B004F93BE /* CircusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D4CCE2681464B004F93BE /* CircusTableViewCell.xib */; };
 		68FBBEB50AAA60CB93A93D88 /* Pods_R_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +52,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D9FD6A92680963A006AD09A /* Stack.framework in Embed Frameworks */,
+				3D8D4CC3268140EC004F93BE /* Medical.framework in Embed Frameworks */,
+				3D8D4C4A26813CF4004F93BE /* Education.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +78,13 @@
 		3D560379267FDF400042A462 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3D560386267FE0180042A462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3D560398267FE5840042A462 /* AppTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		3D8D4C2226813704004F93BE /* CollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8D4C2B268138E0004F93BE /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3D8D4C30268138E9004F93BE /* CircusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircusViewController.swift; sourceTree = "<group>"; };
+		3D8D4C4826813CF4004F93BE /* Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8D4CC1268140EC004F93BE /* Medical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Medical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8D4CCA2681463C004F93BE /* CircusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircusTableViewCell.swift; sourceTree = "<group>"; };
+		3D8D4CCE2681464B004F93BE /* CircusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircusTableViewCell.xib; sourceTree = "<group>"; };
 		3D9FD6A72680963A006AD09A /* Stack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_R_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5EA51E5F50ED6FA2EB2D15 /* Pods-R-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.release.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8D4CC2268140EC004F93BE /* Medical.framework in Frameworks */,
 				68FBBEB50AAA60CB93A93D88 /* Pods_R_Example.framework in Frameworks */,
-				3D9FD6A82680963A006AD09A /* Stack.framework in Frameworks */,
+				3D8D4C4926813CF4004F93BE /* Education.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +121,9 @@
 		063B19AD3BC3DF23F4BD1E69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D8D4CC1268140EC004F93BE /* Medical.framework */,
+				3D8D4C4826813CF4004F93BE /* Education.framework */,
+				3D8D4C2226813704004F93BE /* CollectionView.framework */,
 				3D9FD6A72680963A006AD09A /* Stack.framework */,
 				A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */,
 			);
@@ -137,8 +155,9 @@
 		3D0D7D44267CB65000BA264D /* R-Example */ = {
 			isa = PBXGroup;
 			children = (
-				3D560397267FE55C0042A462 /* Navigation */,
 				3D0D7D89267CB6EF00BA264D /* Application */,
+				3D8D4C2F268138E9004F93BE /* Features */,
+				3D560397267FE55C0042A462 /* Navigation */,
 				3D0D7D7E267CB6EF00BA264D /* Resources */,
 				3D0D7D80267CB6EF00BA264D /* Storyboards */,
 				3D0D7D87267CB6EF00BA264D /* SupportingFiles */,
@@ -203,9 +222,20 @@
 		3D560397267FE55C0042A462 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				3D8D4C2B268138E0004F93BE /* Coordinator.swift */,
 				3D560398267FE5840042A462 /* AppTabBarControllerViewController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3D8D4C2F268138E9004F93BE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D4C30268138E9004F93BE /* CircusViewController.swift */,
+				3D8D4CCA2681463C004F93BE /* CircusTableViewCell.swift */,
+				3D8D4CCE2681464B004F93BE /* CircusTableViewCell.xib */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		6C4F2FF4919EFB3773300A45 /* Pods */ = {
@@ -325,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0D7D8E267CB6EF00BA264D /* Main.storyboard in Resources */,
+				3D8D4CCF2681464B004F93BE /* CircusTableViewCell.xib in Resources */,
 				3D560385267FE0180042A462 /* Localizable.strings in Resources */,
 				3D0D7D8C267CB6EF00BA264D /* Assets.xcassets in Resources */,
 				3D0D7D8D267CB6EF00BA264D /* LaunchScreen.storyboard in Resources */,
@@ -414,8 +445,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8D4CCB2681463C004F93BE /* CircusTableViewCell.swift in Sources */,
+				3D8D4C31268138E9004F93BE /* CircusViewController.swift in Sources */,
 				3D560399267FE5840042A462 /* AppTabBarControllerViewController.swift in Sources */,
 				3D0D7D91267CB6EF00BA264D /* AppDelegate.swift in Sources */,
+				3D8D4C2C268138E0004F93BE /* Coordinator.swift in Sources */,
 				3D0D7D92267CB6EF00BA264D /* SceneDelegate.swift in Sources */,
 				3D56037A267FDF400042A462 /* R.generated.swift in Sources */,
 			);

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CollectionView
+
+  Created by William Boles on 21/06/2021.
+  
+*/
+
+"Education.title" = "Education";
+"Education.description" = "Below is a selection of educational icons:";

@@ -24,7 +24,12 @@ platform :ios do
     )
     scan(
       workspace: "R-Example.xcworkspace",
-      scheme: "Stack",
+      scheme: "Medical",
+      build_for_testing: true
+    )
+    scan(
+      workspace: "R-Example.xcworkspace",
+      scheme: "Education",
       build_for_testing: true
     )
   end

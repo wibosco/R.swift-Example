@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ice cream cone.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

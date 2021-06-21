@@ -6,30 +6,36 @@
 //
 
 import UIKit
-import Stack
+import Education
+import Medical
 
 class AppTabBarController: UITabBarController {
-    let stackViewController: UIViewController = {
-        let viewController = Stack.Coordinator().createInitialViewController()
-        viewController.tabBarItem = UITabBarItem(title: "A", image: nil, tag: 1000)
+    let medicalViewController: UIViewController = {
+        let viewController = Medical.Coordinator().createInitialViewController()
+        viewController.tabBarItem = UITabBarItem(title: R.string.localizable.tabItemMedical(), image: nil, tag: 1000)
 
         return viewController
     }()
-//
-//    let collectionViewNavigationController: ModuleBNavigationController = {
-//        let bundle = Bundle(identifier: "com.williamboles.ModuleB")
-//        let storyboard = UIStoryboard(name: "ModuleB", bundle: bundle)
-//        let navigationController = storyboard.instantiateInitialViewController() as! ModuleBNavigationController
-//        navigationController.tabBarItem = UITabBarItem(title: "B", image: nil, tag: 1001)
-//
-//        return navigationController
-//    }()
-//
-//    // MARK: - View
-//
+    
+    let educationViewController: UIViewController = {
+        let viewController = Education.Coordinator().createInitialViewController()
+        viewController.tabBarItem = UITabBarItem(title: R.string.localizable.tabItemEducation(), image: nil, tag: 1001)
+
+        return viewController
+    }()
+    
+    let circusViewController: UIViewController = {
+        let viewController = Coordinator().createInitialViewController()
+        viewController.tabBarItem = UITabBarItem(title: R.string.localizable.tabItemCircus(), image: nil, tag: 1002)
+
+        return viewController
+    }()
+
+    // MARK: - View
+
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        viewControllers = [stackViewController]
+        viewControllers = [medicalViewController, educationViewController, circusViewController]
     }
 }
