@@ -25,6 +25,7 @@
 		3D8D4CC3268140EC004F93BE /* Medical.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8D4CC1268140EC004F93BE /* Medical.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D8D4CCB2681463C004F93BE /* CircusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D4CCA2681463C004F93BE /* CircusTableViewCell.swift */; };
 		3D8D4CCF2681464B004F93BE /* CircusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D4CCE2681464B004F93BE /* CircusTableViewCell.xib */; };
+		3D99590D268C8708000C2B73 /* Tabs.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D99590F268C8708000C2B73 /* Tabs.strings */; };
 		68FBBEB50AAA60CB93A93D88 /* Pods_R_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		3D8D4CC1268140EC004F93BE /* Medical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Medical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8D4CCA2681463C004F93BE /* CircusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircusTableViewCell.swift; sourceTree = "<group>"; };
 		3D8D4CCE2681464B004F93BE /* CircusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircusTableViewCell.xib; sourceTree = "<group>"; };
+		3D99590E268C8708000C2B73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Tabs.strings; sourceTree = "<group>"; };
 		3D9FD6A72680963A006AD09A /* Stack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A993EBAAB075328CADC97A2C /* Pods_R_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_R_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5EA51E5F50ED6FA2EB2D15 /* Pods-R-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R-Example.release.xcconfig"; path = "Target Support Files/Pods-R-Example/Pods-R-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				3D560379267FDF400042A462 /* R.generated.swift */,
 				3D0D7D7F267CB6EF00BA264D /* Assets.xcassets */,
 				3D560387267FE0180042A462 /* Localizable.strings */,
+				3D99590F268C8708000C2B73 /* Tabs.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D99590D268C8708000C2B73 /* Tabs.strings in Resources */,
 				3D0D7D8E267CB6EF00BA264D /* Main.storyboard in Resources */,
 				3D8D4CCF2681464B004F93BE /* CircusTableViewCell.xib in Resources */,
 				3D560385267FE0180042A462 /* Localizable.strings in Resources */,
@@ -509,6 +513,14 @@
 				3D560386267FE0180042A462 /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3D99590F268C8708000C2B73 /* Tabs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D99590E268C8708000C2B73 /* en */,
+			);
+			name = Tabs.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

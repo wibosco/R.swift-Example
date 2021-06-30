@@ -1,0 +1,11 @@
+/* 
+  Tabs.strings
+  R-Example
+
+  Created by William Boles on 30/06/2021.
+  
+*/
+
+"Tab.item.circus" = "Circus";
+"Tab.item.education" = "Education";
+"Tab.item.medical" = "Medical";

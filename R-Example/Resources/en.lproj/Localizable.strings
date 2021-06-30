@@ -6,9 +6,5 @@
   
 */
 
-"Tab.item.circus" = "Circus";
-"Tab.item.education" = "Education";
-"Tab.item.medical" = "Medical";
-
 "Circus.title" = "Circus";
 "Circus.description" = "Below is a selection of circus icons:";
